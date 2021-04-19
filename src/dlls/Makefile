@@ -1,4 +1,4 @@
-CPP = g++-7
+CPP = g++
 BASEFLAGS = -Dstricmp=strcasecmp -Dstrcmpi=strcasecmp -m32
 OPTFLAGS = -O2
 CPPFLAGS = ${BASEFLAGS} ${OPTFLAGS} -w -I. -I../engine -I../common -I../pm_shared -I../metamod
