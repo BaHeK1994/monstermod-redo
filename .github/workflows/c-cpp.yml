@@ -13,5 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install
+      run: sudo apt install -y g++ gcc g++-multilib gcc-multilib
     - name: make
-      run: cd src/dlls && ls -la && make
+      run: make
+      working-directory: src/dlls
